@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1531498860502-7c2ae08370fa');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-box button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #005fa3;
+}
+
+.main-page {
+  display: none;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employee-container {
+  display: flex;
+  height: 80vh;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.employee-box {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.add-employee-btn {
+  padding: 10px 15px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.add-employee-btn:hover {
+  background: #005fa3;
+}
+
+.employees__names--item {
+  display: block;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.employees__names--item.selected {
+  background: #d0e8ff;
+}
+
+.employeeDelete {
+  float: right;
+  color: red;
+  cursor: pointer;
+}
+
+.addEmployee {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+}
+
+.addEmployee_create {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addEmployee_create input, .addEmployee_create button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.addEmployee_create button {
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}

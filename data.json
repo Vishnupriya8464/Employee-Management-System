@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "firstName": "Vishnu",
+    "lastName": "Priya",
+    "email": "vishnu@example.com",
+    "contactNumber": "9876543210",
+    "salary": "50000",
+    "address": "Chennai, India",
+    "dob": "1998-08-15",
+    "age": 26,
+    "imageUrl": "https://via.placeholder.com/100"
+  },
+  {
+    "id": 2,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john@example.com",
+    "contactNumber": "9123456789",
+    "salary": "45000",
+    "address": "Mumbai, India",
+    "dob": "1995-02-10",
+    "age": 29,
+    "imageUrl": "https://via.placeholder.com/100"
+  }
+]

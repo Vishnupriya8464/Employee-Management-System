@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Login Page -->
+  <div class="login-page" id="loginPage">
+    <div class="login-box">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <!-- Main Page -->
+  <div class="main-page" id="mainPage">
+    <div class="header">
+      <h1>Employee Database Management</h1>
+      <button class="add-employee-btn" onclick="showAddEmployeeForm()">Add Employee</button>
+    </div>
+    <div class="employee-container">
+      <div class="employee-box">
+        <h3>Employee List</h3>
+        <div class="employees__names--list"></div>
+      </div>
+      <div class="employee-box">
+        <h3>Employee Information</h3>
+        <div class="employees__single--info"></div>
+      </div>
+    </div>
+
+    <!-- Add Employee Modal -->
+    <div class="addEmployee" id="addEmployeeModal">
+      <form class="addEmployee_create" id="addEmployeeForm">
+        <h3>Add Employee</h3>
+        <input name="firstName" placeholder="First Name" required />
+        <input name="lastName" placeholder="Last Name" required />
+        <input name="email" placeholder="Email" type="email" required />
+        <input name="contactNumber" placeholder="Contact Number" required />
+        <input name="dob" placeholder="DOB" type="date" class="addEmployee_create--dob" required />
+        <input name="salary" placeholder="Salary" required />
+        <input name="address" placeholder="Address" required />
+        <input name="imageUrl" placeholder="Image URL (optional)" />
+        <button type="submit">Add</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
